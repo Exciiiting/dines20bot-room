@@ -48,7 +48,7 @@ console.log("Failed To Join:\n The Channel Type isn't \"text\"");
  
  
 const adminprefix = "2968";
-const devs = ['515147314793283587'];
+const devs = ['506211849100984320'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
