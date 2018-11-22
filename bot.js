@@ -49,15 +49,12 @@ console.log("Failed To Join:\n The Channel Type isn't \"text\"");
  
 
 
-  client.on('ready', () => {
-  console.log(`Hi ${client.user.tag} , This Code by : YossiF `);
-  console.log('')
-  console.log(`i Have  [ " ${client.guilds.size} " ]`);
-});
 
+
+
+client.on('message', message => {
 const developers = ["323160008411971585"]
 const adminprefix = "1";
-client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
        
