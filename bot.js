@@ -47,7 +47,7 @@ console.log("Failed To Join:\n The Channel Type isn't \"text\"");
 });
  
  
-
+var prefix = "1"
 const devs = ['323160008411971585'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
